@@ -1,0 +1,99 @@
+\documentclass[2pt]{article}
+\usepackage[margin= 0.2 in]{geometry}
+\usepackage[parfill]{parskip}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[]{algorithm2e}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{color}
+\usepackage{mathpazo}
+\usepackage{algorithm2e}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{fontenc}
+\usepackage{mdframed}
+\usepackage{enumitem}
+\usepackage{dsfont}
+\newcommand{\La}{$\mathcal{L}$}
+\newcommand{\li}{\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.2pt}}}
+\newcommand{\LU}{$\mathds{L}$}
+\graphicspath{ {./} }
+
+\begin{document}
+    \begin{center}
+        \underline{Sprint 2 Plan}
+        \item Authored by: Alexander Bistagne
+    \end{center}
+
+    \begin{flushleft}
+        \item \textbf{Product Name: }Calendar Application.
+        \item \textbf{Team Name: } CAP.
+        \item \textbf{Sprint Completion Date: } Sunday, November 3$^{\text{rd}}$, 2019
+        \item \textbf{Revision Number: } 2.0
+        \item \textbf{Revision Date: } October 22th, 2019.
+        
+        \item \textbf{\underline{Goal}} \indent The initial goals for CAP are an initial calendar template and a functional login/create account page for clients and admins to interact with while using Good SCRUM practices.
+        \item \textbf{Task Listing By User Story :}
+        \begin{itemize}
+            \item As a team member, I want to know our code policies so that I can work well with my coworkers. 
+            \\MoSCoW rating: Must have
+            \begin{enumerate}
+                \item Make a guidelines pdf and submit it (1 planning poker point)
+            \end{enumerate}
+            \item As a user, I would like to create an account so that I can use the site. 
+            \\MoSCoW rating: Must have
+            \begin{enumerate}[resume]
+                \item Make a Database Schema (8 planning poker points)
+                \item Design the look of the entire page and write the CSS (3 planning poker points)
+                \item Finish writing the React and Redux Code (5 planning poker points)
+                \item Make the Backend( Django and Postgres) code (8 planning poker points + spike)
+                \item Make the Backend Unit Tests for this feature (5 planning poker points + spike)
+            \end{enumerate}
+						 \item As a user, I would like to log in to the site so that I can use the site.
+						 \\MoSCoW rating: Must have  \quad The estimates for these tasks assume the completion of the previous user story.
+						 \begin{enumerate}[resume]
+						 		  \item Write the React and Redux Code to get this feature running (3 planning poker points)
+						 		  \item Implement the Login protocol in the backend (5 planning poker points)
+						 		  \item Write backend Unit tests for the login protocol (3 planning poker points)
+						 \end{enumerate}
+            \item As a user, I would like to view a calendar that I will be utilizing for this web application.
+            \\MoSCoW rating: Must have
+            \begin{enumerate}[resume]
+                \item Write the CSS code and Customize the style of the Calendar to not be bland (3 planning poker points + spike)
+                \item Write the frontend code necessary to make the Calendar only visible when a person is logged in (1 planning poker point)
+            \end{enumerate}
+            \item As a developer, I would like to have front end unit tests so that I can trust the front end to be stable.\\MoSCoW rating: Should have
+						 \begin{enumerate}[resume]
+						 				\item Write a Front End Unit test for Creating an Account (5 planning poker points + spike)
+						 				\item Write a Front End Unit test for Logging in. (3 planning poker points)
+						 \end{enumerate}
+						 \item As a planning person, I want to create events so that people can sign up for them.
+						 \\MoSCoW rating: Could have \qquad This event was not broken up into tasks because we already had reached our intended max amount of planning poker points of over 40.
+						 \item As a legal advisor to our organization, I want our site to be secure so that we can cover our asses. This would include protection against XSS attacks, and Salting and Hashing our passwords.
+						 \\MoSCoW rating Could have \qquad like above this user story was not broken up into tasks
+        \end{itemize}
+        \item \item \textbf{Team Roles, Initial Task Assignment }
+        \begin{enumerate}
+            	\item Matthew Johnson (Product Owner, Front End Developer) : Writing React and Redux Code. (Tasks  4 and 7. Maybe if time, tasks 12 and 13)
+             \item Alexander Bistagne (Current Scrum Master, Front End Developer) : Designing and Writing CSS Code, but also necessary animations: (Tasks 3, 10, 11. Maybe if time, the Security User Story)
+            	\item Alfredo Vicuna  (Lead Back End Developer) : Working with Django and Postgres. (Task 1 and some mix of tasks 2,5,6,8,9)
+            	\item Weihao Ke (Back End Developer) : Working with Django and Postgres (Some mix of tasks 2,5,6,8,9)
+            	\item Yongsheng Cui (Back End Developer) : Working with Django and Postgres (Some mix of tasks 2,5,6,8,9)
+        \end{enumerate}
+      \item   Note: The Backend Developers want to break up the backend tasks into a lot of smaller tasks than this intial SCRUM planning did, before the split the tasks between eachother.
+        \item \item \textbf{Initial Scrumboard (Jira Snapshot)}
+        \begin{figure}[h]
+            \centering
+           \includegraphics[width=15cm, height=10cm]{Trello_SCRUM_2.png}
+        \end{figure}   
+
+        \item \item Scrum Meetings :
+        \item Standups: 5:30 PM Mondays, 3:30 Thursdays, 3:30 Saturdays.
+				\item Sprint Review and Planning: 3:30 Applicable Sundays.
+				\item Topic or Followup Meetings when needed.     
+    \end{flushleft}
+
+\end{document}

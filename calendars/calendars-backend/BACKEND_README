@@ -1,0 +1,27 @@
+setting up the backend:
+    Database:
+        download postgres for your platform.
+        within the postgres application 
+            -  create a database called ccg.
+                createdb ccg
+            - create a user called admin
+                createuser admin;
+            
+            - alter the roles of teh admind
+                alter user admin with encrypted password 'admin12345';
+
+            - change the permsissions of that new user.
+                grant all privileges on database ccg to admin;
+
+    Flask : 
+        pip install flask
+        - download the module that allows you to interact with the database
+            pip install psycopg2      
+            - if the above command doesn't work, install the binary with the following command.
+                pip install psycopg2-binary
+        - Download the CORS stuff needed for flask.
+            pip install -U flask-cors
+        
+        - pip download responses/requests
+            pip install responses
+            pip install requests

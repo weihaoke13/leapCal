@@ -1,0 +1,15 @@
+	.rbc-toolbar{
+//changed to rem for accessibility needs:
+		font-size: 1rem;
+		margin-bottom: .625rem;
+//making the title pop		
+		.rbc-toolbar-label{
+			font-size: 2rem;
+		}
+// button radius down here because order of effect is annoying	
+		& button{
+			border-radius: $common-border-radius;
+			background-color: $btn-bg;
+		}
+	}
+	

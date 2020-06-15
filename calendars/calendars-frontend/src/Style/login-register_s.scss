@@ -1,0 +1,7 @@
+//LOGIN-REGISTER PAGES primarily
+$body-bg : $secondary;
+$link-color : darken($primary, 27%) ;
+$link-hover-color : lighten( $link-color, 10%) ;
+.jumbotron {
+	background-color: transparent !important;
+}

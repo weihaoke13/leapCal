@@ -1,0 +1,28 @@
+//IMPORTANT COLORS:
+$primary : #8CC762;
+$logo-dark : #455b66;
+$secondary : #95C6EA;
+$mixed-colors: darken(#90c6a6,15%); //https://www.w3schools.com/colors/colors_mixer.asp
+$info : $mixed-colors;
+//underscore s means it goes before any imports.
+@import './login-register_s';
+
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~react-big-calendar/lib/sass/variables';
+
+@import './rounding_m';
+@import './homepage_m';
+
+@import '~react-big-calendar/lib/sass/styles';
+@import '~bootstrap/scss/bootstrap.scss';
+// last order of effect
+@import './homepage_e';
+
+//Scheme of imports:
+//important stuff
+//import _s files
+//import variables from libraries
+//import _m files
+//import full sass libraries
+//import  _e files

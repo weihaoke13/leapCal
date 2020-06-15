@@ -1,0 +1,27 @@
+///////HOMEPAGE 
+//bg color: light blue almost white, dark blue from logo for gridlines.
+	.rbc-calendar {
+		border-radius: $common-border-radius;
+	}
+	$cell-border: $logo-dark;
+	$calendar-border: $logo-dark;
+	.rbc-month-view {
+		background-color: lighten( $secondary , 23.5%);
+		border-radius: $common-border-radius;
+	}
+	.rbc-time-view {
+		background-color: lighten( $secondary, 23.5%);
+		border-radius: $common-border-radius;
+	}
+//button colors: green but dark green when pressed, add rounding.
+	$btn-border: $logo-dark;
+	$btn-bg: $primary;	//made more general below
+	$btn-color: $white; 
+	//rounding below
+//event: add more rounding. pick a blue-green between the colors. and keep the darkness.
+	$event-border-radius: $common-border-radius;
+	$event-bg: $mixed-colors;
+//Make the title pop?
+	//done in _e file
+//only when in admin mode Other Days should have + symbol
+

@@ -1,0 +1,44 @@
+	$common-border-radius: $font-size-base;
+	
+// want to write code of the form: $#{var1}-border-radius-#{var2} : $#{var1}-font-size-#{var2}; but that won't compile
+// 'btn', 'input', 'form-select',  'form-file';
+	$btn-border-radius:		$btn-font-size;
+	$btn-border-radius-lg:	$btn-font-size-lg;
+	$btn-border-radius-sm: 	$btn-font-size-sm ;
+
+	$input-border-radius:     $input-font-size;
+	$input-border-radius-lg:  $input-font-size-lg;
+	$input-border-radius-sm:  $input-font-size-sm;
+	
+    $custom-select-border-radius:     $custom-select-font-size;
+	$custom-select-border-radius-lg:  $custom-select-font-size-lg;
+	$custom-select-border-radius-sm:  $custom-select-font-size-sm;
+
+	$nav-tabs-border-radius: $common-border-radius;
+	$nav-pills-border-radius: $common-border-radius;	
+	$dropdown-border-radius: $dropdown-font-size ;
+	$pagination-border-radius: $common-border-radius;
+	$tooltip-border-radius: $tooltip-font-size;
+	$popover-border-radius: $popover-font-size ;
+
+// Badges and Toasts are ways of notifyin things like quantity and small messages.
+
+	$toast-border-radius: $toast-font-size ;
+	$badge-border-radius: $badge-font-size ;
+// modals are nice popups that darken the rest of the page.
+	$modal-content-border-radius: $font-size-lg; // used this because it used border-radius-lg
+	$alert-border-radius: $common-border-radius ;
+	$progress-border-radius: $progress-font-size ;
+	$list-group-border-radius: $common-border-radius;
+// Breadcrumb is a folder style trace of where you are on a website.
+	$breadcrumb-border-radius: $common-border-radius;
+
+// already well defined 	$form-file-border-radius	
+// already well defined 	$navbar-toggler-border-radius
+// already well defined 	$dropdown-inner-border-radius		
+// card not implemented because it would look bad.
+// already well defined $form-feedback-tooltip-border-radius
+// already well defined $popover-inner-border-radius		
+//thumbnail not implemented because it would look bad.	
+// on future style changes I should find out if editing the base 
+//and undoing the exceptions is better than editing all the use cases.
